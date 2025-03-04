@@ -2,6 +2,10 @@
 
 @theme {
   --color-border: oklch(70.9% 0 0);
+  --color-border-input: oklch(88.53% 0 0);
+  --color-placeholder: oklch(70.9% 0 0);
+  --color-verify: oklch(64.75% 0.1603 148.5);
+  --color-none-verify: oklch(62.57% 0.2058 29.08);
 }
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
