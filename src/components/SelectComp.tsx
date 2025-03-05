@@ -7,12 +7,16 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-const SelectComp = () => {
+const SelectComp = ({
+  className = "",
+}:{
+  className?: string,
+}) => {
   return (
     <div className={``}>
       <Select>
-        <SelectTrigger className={`min-w-[410px] w-full`}>
-          <SelectValue placeholder="Theme" />
+        <SelectTrigger className={`min-w-[410px] border border-border-input h-[52px] ${className}`}>
+          <SelectValue placeholder="" />
         </SelectTrigger>
         <SelectContent>
           <SelectItem value="light">Light</SelectItem>
