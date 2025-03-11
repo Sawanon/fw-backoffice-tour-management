@@ -1,6 +1,4 @@
-import React from 'react'
 import { SearchInput } from '../components/SearchInput'
-import { User } from 'iconsax-react'
 import MemberCard from '../components/MemberCard'
 
 const Member = () => {

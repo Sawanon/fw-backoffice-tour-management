@@ -1,5 +1,5 @@
 import { ArrowRight2 } from "iconsax-react";
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 
 const SettingItem = ({
   name,

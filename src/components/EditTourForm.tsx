@@ -1,9 +1,7 @@
-import React from 'react'
 import { InputComp } from './InputComp'
 import TextAreaComp from './TextAreaComp'
 import SelectComp from './SelectComp'
 import Autocomplete from './Autocomplete'
-import { AddCircle } from 'iconsax-react'
 import TourInfomation from './TourInfomation'
 
 const EditTourForm = ({

@@ -6,7 +6,7 @@ const Autocomplete = ({
 }:{
   className?: string,
 }) => {
-  const [items, setItems] = React.useState<string[]>(["apple", "banana", "cherry", "date", "elderberry", "fig", "grape", "kiwi", "lemon", "mango", "nectarine", "orange", "pear", "quince", "raspberry", "strawberry", "tangerine", "ugli", "voavanga", "watermelon", "xigua", "yellow watermelon", "zucchini"])
+  const items = ["apple", "banana", "cherry", "date", "elderberry", "fig", "grape", "kiwi", "lemon", "mango", "nectarine", "orange", "pear", "quince", "raspberry", "strawberry", "tangerine", "ugli", "voavanga", "watermelon", "xigua", "yellow watermelon", "zucchini"]
   const [tags, setTags] = React.useState<string[]>([])
   const [currentTag, setCurrentTag] = React.useState<string>('')
   const [isShowTop, setIsShowTop] = React.useState<boolean>(false)

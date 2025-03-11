@@ -1,6 +1,5 @@
 import ReviewCard from '@/components/ReviewCard'
 import { ArrowLeft2 } from 'iconsax-react'
-import React from 'react'
 
 const Review = () => {
   

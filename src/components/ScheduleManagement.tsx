@@ -1,5 +1,5 @@
 import { AddCircle, ArrowLeft2 } from "iconsax-react";
-import React, { useState } from "react";
+import { useState } from "react";
 import { DatePicker } from "./DatePicker";
 import ScheduleCard from "./ScheduleCard";
 import TimePicker from "./TimePicker";

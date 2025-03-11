@@ -1,5 +1,4 @@
 import { User } from "iconsax-react";
-import React from "react";
 
 const MemberCard = ({
   isVerify,

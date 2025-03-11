@@ -1,5 +1,4 @@
 import { Edit2, Flag, Location } from "iconsax-react";
-import React from "react";
 import {
   DropdownMenu,
   DropdownMenuContent,

@@ -1,6 +1,5 @@
-import { ArrowDown, ArrowDown2, Star } from 'iconsax-react'
+import { ArrowDown2 } from 'iconsax-react'
 import { CheckCircle2, StarIcon, XCircle } from 'lucide-react'
-import React from 'react'
 
 export type ReviewData = {
   username: string,

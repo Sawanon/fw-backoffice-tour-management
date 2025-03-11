@@ -5,7 +5,6 @@ import {
   SelectItem,
   SelectLabel,
   SelectTrigger,
-  SelectValue,
 } from "@/components/ui/select"
 import { useState } from "react";
 
@@ -27,6 +26,7 @@ const TimePicker = ({
   const [selectedTime, setSelectedTime] = useState<string | undefined>()
 
   const handleOnChangeTime = (time: string) => {
+    setSelectedTime(time)
     onChange(time)
   }
   
@@ -34,7 +34,7 @@ const TimePicker = ({
     <Select
       onValueChange={(value) => {
         console.log(value);
-        
+        handleOnChangeTime(value)
       }}
     >
       <SelectTrigger className={`min-w-[110px] border border-border-input h-[52px] ${className}`}>

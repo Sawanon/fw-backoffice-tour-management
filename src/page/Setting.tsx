@@ -1,8 +1,6 @@
 import SettingItem from "@/components/SettingItem";
-import TourInfomationItem from "@/components/TourInfomationItem";
 import { ArrowLeft2 } from "iconsax-react";
 import { Compass, Computer, Info, Lock, LogOut } from "lucide-react";
-import React from "react";
 
 const Setting = () => {
   return (

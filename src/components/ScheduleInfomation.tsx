@@ -1,10 +1,8 @@
 import { AddCircle, ArrowLeft, ArrowRight, DocumentText, DollarCircle, Export, Text } from 'iconsax-react'
-import React from 'react'
 import AddGroupDialog from './AddGroupDialog'
 import AddTourInfomationDialog from './AddTourInfomationDialog'
 import ContentFormDialog from './ContentFormDialog'
 import TourInfomationItem from './TourInfomationItem'
-import { Currency } from 'lucide-react'
 
 const ScheduleInfomation = () => {
   return (

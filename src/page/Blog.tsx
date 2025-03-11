@@ -1,8 +1,7 @@
 import BlogCard from "@/components/BlogCard";
 import BlogFormDialog from "@/components/BlogFormDialog";
 import { SearchInput } from "@/components/SearchInput";
-import { AddCircle, ArrowLeft2 } from "iconsax-react";
-import React from "react";
+import { AddCircle } from "iconsax-react";
 
 const Blog = () => {
   return (

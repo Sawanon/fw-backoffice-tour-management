@@ -1,5 +1,4 @@
 import { AddCircle } from 'iconsax-react'
-import React from 'react'
 import AddPackageDialog from './AddPackageDialog'
 import PackageCard from './PackageCard'
 

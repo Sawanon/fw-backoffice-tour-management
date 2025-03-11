@@ -1,5 +1,4 @@
 import { DocumentText, Edit, Setting2, Star1 } from 'iconsax-react'
-import React from 'react'
 import { Link, useLocation } from 'react-router'
 
 const SidebarComponent = () => {

@@ -1,6 +1,5 @@
-import React from 'react'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
-import { ArrowDown, ArrowDown2, ArrowUp2 } from 'iconsax-react'
+import { ArrowDown2, ArrowUp2 } from 'iconsax-react'
 import { X } from 'lucide-react'
 
 const ContentControl = ({

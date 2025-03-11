@@ -1,5 +1,4 @@
-import { Edit, Edit2, Trash } from 'iconsax-react'
-import React from 'react'
+import { Edit, Trash } from 'iconsax-react'
 import AddPackageDialog from './AddPackageDialog'
 
 const PackageCard = ({

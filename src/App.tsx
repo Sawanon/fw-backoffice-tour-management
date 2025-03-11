@@ -1,20 +1,14 @@
-import { useState } from "react";
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './App.css'
-import LoginPage from "./page/login";
-import SidebarComponent from "./components/sidebar";
 import { BrowserRouter, Route, Routes } from "react-router";
 import MainLayout from "./layout/MainLayout";
-import Member from "./page/Member";
 import Tour from "./page/Tour";
 import Review from "./page/Review";
 import Setting from "./page/Setting";
 import Blog from "./page/Blog";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div>
       <BrowserRouter>

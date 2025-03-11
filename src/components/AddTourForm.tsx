@@ -1,4 +1,3 @@
-import React from 'react'
 import { InputComp } from './InputComp'
 import TextAreaComp from './TextAreaComp'
 import SelectComp from './SelectComp'

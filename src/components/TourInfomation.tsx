@@ -1,14 +1,13 @@
-import { AddCircle, ArrowRight2, Bag, Gallery } from "iconsax-react";
-import React from "react";
+import { AddCircle, Bag, Gallery } from "iconsax-react";
 import TourInfomationItem from "./TourInfomationItem";
 import AddTourInfomationDialog from "./AddTourInfomationDialog";
 import ContentFormDialog from "./ContentFormDialog";
 
 const TourInfomation = () => {
-  const [isOpenAddInfo, setIsOpenAddInfo] = React.useState(false);
+  // const [isOpenAddInfo, setIsOpenAddInfo] = React.useState(false);
   
   const handleOnClickAdd = () => {
-    setIsOpenAddInfo(true)
+    // setIsOpenAddInfo(true)
   }
   return (
     <div className={`mt-10`}>
