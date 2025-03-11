@@ -12,6 +12,9 @@
   --color-none-verify: oklch(62.57% 0.2058 29.08);
   --color-card-background: oklch(96.12% 0 0);
   --color-action-button: oklch(88.53% 0 0);
+  --color-schedule-button: oklch(83.04% 0.1698 83.99);
+  --color-primay-button: oklch(63.04% 0.18 259.96);
+  --color-error: oklch(62.57% 0.2058 29.08);
 }
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;

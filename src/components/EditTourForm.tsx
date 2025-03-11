@@ -3,10 +3,29 @@ import { InputComp } from './InputComp'
 import TextAreaComp from './TextAreaComp'
 import SelectComp from './SelectComp'
 import Autocomplete from './Autocomplete'
+import { AddCircle } from 'iconsax-react'
+import TourInfomation from './TourInfomation'
 
-const AddTourForm = () => {
+const EditTourForm = ({
+  onClickSchedule,
+}:{
+  onClickSchedule: () => void,
+}) => {
+
+  const handleOnClickSchedule = () => {
+    onClickSchedule()
+  }
+
   return (
     <div className={`space-y-4`}>
+      <div className={`flex justify-end`}>
+        <div
+          onClick={handleOnClickSchedule}
+          className={`bg-schedule-button py-2 px-8 rounded-[10px] cursor-pointer text-xl font-light text-white`}
+        >
+          Schedule
+        </div>
+      </div>
       <div>
         <div className={`text-base font-light`}>
           Head Photo
@@ -137,11 +156,15 @@ const AddTourForm = () => {
         <div
           className={`flex justify-center items-center bg-primay-button px-8 py-4 rounded-[10px] cursor-pointer text-2xl font-light text-white`}
         >
-          Save
+          Update
         </div>
       </div>
+
+      {/* Tour infomation */}
+        <TourInfomation />
+      {/* Tour infomation */}
     </div>
   )
 }
 
-export default AddTourForm
+export default EditTourForm

@@ -7,10 +7,12 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-const TourCard = ({
+const BlogCard = ({
   onEdit,
+  className,
 }:{
   onEdit: () => void,
+  className?: string,
 }) => {
 
   const handleOnEdit = () => {
@@ -18,19 +20,12 @@ const TourCard = ({
   }
   return (
     <div
-      className={`flex bg-card-background min-w-[410px] rounded-[10px] overflow-hidden`}
+      className={`flex bg-card-background min-w-[410px] rounded-[10px] overflow-hidden ${className ?? ``}`}
     >
       <div className={`flex-1 p-4`}>
-        <div className={`text-xl font-light`}>Issara Liveaboard</div>
-        <div className={`flex gap-4 mt-4`}>
-          <div className={`flex gap-1 items-center`}>
-            <Location size={16} color="#000" />
-            <div className={`text-xs font-light`}>Thailand</div>
-          </div>
-          <div className={`flex gap-1 items-center`}>
-            <Flag size={16} color="#000" />
-            <div className={`text-xs font-light`}>Liveaboard</div>
-          </div>
+        <div className={`text-xl font-light`}>Title</div>
+        <div className={`flex gap-4 mt-4 text-xs text-placeholder`}>
+          If you have any questions or need assistance, please let us know "Inquire about information" “Book a diving trip"
         </div>
       </div>
       <DropdownMenu>
@@ -55,4 +50,4 @@ const TourCard = ({
   );
 };
 
-export default TourCard;
+export default BlogCard;
