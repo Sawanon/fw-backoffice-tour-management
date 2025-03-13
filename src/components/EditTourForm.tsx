@@ -3,6 +3,7 @@ import TextAreaComp from './TextAreaComp'
 import SelectComp from './SelectComp'
 import Autocomplete from './Autocomplete'
 import TourInfomation from './TourInfomation'
+import InputTagComp from './InputTagComp'
 
 const EditTourForm = ({
   onClickSchedule,
@@ -147,7 +148,11 @@ const EditTourForm = ({
           {/* <InputComp
             className={`w-full`}
           /> */}
-          <Autocomplete />
+          {/* <Autocomplete /> */}
+          <InputTagComp
+            className={`flex-1 max-w-full overflow-x-auto`}
+            inputClassName={`w-full max-w-full`}
+          />
         </div>
       </div>
       <div>

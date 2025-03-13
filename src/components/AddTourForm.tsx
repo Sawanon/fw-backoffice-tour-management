@@ -2,6 +2,7 @@ import { InputComp } from './InputComp'
 import TextAreaComp from './TextAreaComp'
 import SelectComp from './SelectComp'
 import Autocomplete from './Autocomplete'
+import InputTagComp from './InputTagComp'
 
 const AddTourForm = () => {
   return (
@@ -121,15 +122,19 @@ const AddTourForm = () => {
           />
         </div>
       </div>
-      <div>
+      <div className={``}>
         <div className={`text-base font-light`}>
           Tag
         </div>
-        <div className={`mt-2`}>
+        <div className={`mt-2 flex`}>
           {/* <InputComp
             className={`w-full`}
           /> */}
-          <Autocomplete />
+          {/* <Autocomplete /> */}
+          <InputTagComp
+            className={`flex-1 max-w-full overflow-x-auto`}
+            inputClassName={`w-full max-w-full`}
+          />
         </div>
       </div>
       <div>

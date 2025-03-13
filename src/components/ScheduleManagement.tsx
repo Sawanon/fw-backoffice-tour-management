@@ -10,9 +10,13 @@ import ButtonComp from "./ButtonComp";
 import { Percent } from "lucide-react";
 import ScheduleInfomation from "./ScheduleInfomation";
 import PackageManagement from "./PackageManagement";
+import ColorPicker from 'react-pick-color'
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import InputTagComp from "./InputTagComp";
 
 const ScheduleManagement = ({ onClickBack }: { onClickBack: () => void }) => {
   const [mode, setMode] = useState<"default" | "add" | "edit">("default");
+  const [color, setColor] = useState("#EA4335")
 
   const handleOnClickBack = () => {
     onClickBack();
@@ -83,11 +87,9 @@ const ScheduleManagement = ({ onClickBack }: { onClickBack: () => void }) => {
               <div className={`p-1 flex-1`}>
                 <div className={`font-light`}>Status</div>
                 <div className={`mt-4`}>
-                  <TimePicker
-                    onChange={(time) => {
-                      console.log(time);
-                    }}
-                    className={`w-full h-[65px]`}
+                  <SelectComp
+                    className={`h-[65px] min-w-0 w-full`}
+                    items={[`Available`, `Full`, `Offline`, `Pending`, `Hold`]}
                   />
                 </div>
               </div>
@@ -121,9 +123,23 @@ const ScheduleManagement = ({ onClickBack }: { onClickBack: () => void }) => {
             <div className={`w-full`}>
               <div className={`font-light`}>Bullet</div>
               <div className={`mt-4 flex items-center gap-4`}>
-                <div
-                  className={`bg-none-verify min-w-[54px] min-h-[54px] rounded-full`}
-                ></div>
+                <Popover>
+                  <PopoverTrigger asChild>
+                    <div
+                      className={`min-w-[54px] min-h-[54px] rounded-full`}
+                      style={{
+                        backgroundColor: `${color}`,
+                      }}
+                    >
+                    </div>
+                  </PopoverTrigger>
+                  <PopoverContent className="w-80">
+                  <ColorPicker
+                    color={color}
+                    onChange={color => setColor(color.hex)}
+                  />
+                  </PopoverContent>
+                </Popover>
                 <div>-</div>
                 <div className={`flex-1`}>
                   <InputComp className={`h-[65px] flex-1`} />
@@ -133,7 +149,11 @@ const ScheduleManagement = ({ onClickBack }: { onClickBack: () => void }) => {
             <div className={`w-full`}>
               <div className={`font-light`}>Tag</div>
               <div className={`mt-4`}>
-                <Autocomplete className={`w-full h-[65px]`} />
+                {/* <Autocomplete className={`w-full h-[65px]`} /> */}
+                <InputTagComp
+                  className={`flex-1 max-w-full overflow-x-auto`}
+                  inputClassName={`w-full max-w-full`}
+                />
               </div>
             </div>
             <ButtonComp onClick={() => {}}>Save</ButtonComp>
@@ -229,8 +249,8 @@ const ScheduleManagement = ({ onClickBack }: { onClickBack: () => void }) => {
                   <div className={`w-[140px]`}>
                     <SelectComp
                       className={`w-full min-w-0 h-[65px]`}
-                      endIcon={<Percent size={24} color="#000" />}
-                      items={["10", "50"]}
+                      // endIcon={<Percent size={24} color="#000" />}
+                      items={["%", "Curency"]}
                     />
                   </div>
                 </div>
@@ -251,9 +271,23 @@ const ScheduleManagement = ({ onClickBack }: { onClickBack: () => void }) => {
             <div className={`w-full`}>
               <div className={`font-light`}>Bullet</div>
               <div className={`mt-4 flex items-center gap-4`}>
-                <div
-                  className={`bg-none-verify min-w-[54px] min-h-[54px] rounded-full`}
-                ></div>
+                <Popover>
+                  <PopoverTrigger asChild>
+                    <div
+                      className={`min-w-[54px] min-h-[54px] rounded-full`}
+                      style={{
+                        backgroundColor: `${color}`,
+                      }}
+                    >
+                    </div>
+                  </PopoverTrigger>
+                  <PopoverContent className="w-80">
+                  <ColorPicker
+                    color={color}
+                    onChange={color => setColor(color.hex)}
+                  />
+                  </PopoverContent>
+                </Popover>
                 <div>-</div>
                 <div className={`flex-1`}>
                   <InputComp className={`h-[65px] flex-1`} />
@@ -263,7 +297,11 @@ const ScheduleManagement = ({ onClickBack }: { onClickBack: () => void }) => {
             <div className={`w-full`}>
               <div className={`font-light`}>Tag</div>
               <div className={`mt-4`}>
-                <Autocomplete className={`w-full h-[65px]`} />
+                {/* <Autocomplete className={`w-full h-[65px]`} /> */}
+                <InputTagComp
+                  className={`flex-1 max-w-full overflow-x-auto`}
+                  inputClassName={`w-full max-w-full`}
+                />
               </div>
             </div>
             <ButtonComp onClick={() => {}}>Update</ButtonComp>

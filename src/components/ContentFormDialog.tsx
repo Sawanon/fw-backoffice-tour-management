@@ -7,7 +7,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import ContentControl from "./ContentControl";
-import { Square } from "lucide-react";
+import { Square, X } from "lucide-react";
 import TextEditor from "./TextEditor";
 import { Add, CloseCircle } from "iconsax-react";
 import ButtonComp from "./ButtonComp";
@@ -99,18 +99,18 @@ const ContentFormDialog = ({
                 </div>
                 <div className={`grid grid-cols-3 gap-2 mt-4`}>
                   <div className={`relative bg-red-800 rounded-[10px] min-w-36 h-28`}>
-                    <div className={`absolute -top-3 -right-3`}>
-                      <CloseCircle color="#000" size={24} />
+                    <div className={`absolute -top-3 -right-3 bg-none-verify rounded-full p-1 z-10`}>
+                      <X color="#fff" size={20} />
                     </div>
                   </div>
                   <div className={`relative bg-red-800 rounded-[10px] min-w-36 h-28`}>
-                    <div className={`absolute -top-3 -right-3`}>
-                      <CloseCircle color="#000" size={24} />
+                    <div className={`absolute -top-3 -right-3 bg-none-verify rounded-full p-1 z-10`}>
+                      <X color="#fff" size={20} />
                     </div>
                   </div>
                   <div className={`relative bg-red-800 rounded-[10px] min-w-36 h-28`}>
-                    <div className={`absolute -top-3 -right-3`}>
-                      <CloseCircle color="#000" size={24} />
+                    <div className={`absolute -top-3 -right-3 bg-none-verify rounded-full p-1 z-10`}>
+                      <X color="#fff" size={20} />
                     </div>
                   </div>
                 </div>

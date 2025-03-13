@@ -14,6 +14,7 @@ import { Square } from "lucide-react";
 import ContentControl from "./ContentControl";
 import TextEditor from "./TextEditor";
 import { Add, CloseCircle } from "iconsax-react";
+import InputTagComp from "./InputTagComp";
 
 type MyComponentProps = {
   children: ReactNode; // รับ children เข้ามา
@@ -62,7 +63,11 @@ const BlogFormDialog = ({ children }: MyComponentProps) => {
           </div>
           <div>
             <div className={`text-base font-light`}>Tag</div>
-            <Autocomplete className={`mt-4 w-full`} />
+            {/* <Autocomplete className={`mt-4 w-full`} /> */}
+            <InputTagComp
+              className={`flex-1 max-w-full overflow-x-auto mt-4`}
+              inputClassName={`w-full max-w-full`}
+            />
           </div>
           <div>
             <div className={`text-base font-light`}>Photo</div>

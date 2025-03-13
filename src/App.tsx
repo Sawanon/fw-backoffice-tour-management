@@ -7,6 +7,7 @@ import Tour from "./page/Tour";
 import Review from "./page/Review";
 import Setting from "./page/Setting";
 import Blog from "./page/Blog";
+import LoginPage from "./page/login";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
         </Route> */}
-
+          <Route path="/login" element={<LoginPage />} />
           <Route path="/" element={<MainLayout />}>
             <Route index element={<Tour />} />
             <Route path="/review" element={<Review />} />

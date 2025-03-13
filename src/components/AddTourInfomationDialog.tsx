@@ -27,8 +27,8 @@ const AddTourInfomationDialog = ({ children }: MyComponentProps) => {
             <div>
               icon code
             </div>
-            <Autocomplete
-              className={`mt-4`}
+            <InputComp
+              className={`mt-4 w-full`}
             />
           </div>
           <div>

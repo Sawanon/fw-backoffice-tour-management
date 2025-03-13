@@ -9,6 +9,7 @@ import {
 import { InputComp } from './InputComp';
 import ButtonComp from './ButtonComp';
 import SelectComp from './SelectComp';
+import TextAreaComp from './TextAreaComp';
 
 type MyComponentProps = {
   children: ReactNode; // รับ children เข้ามา
@@ -36,8 +37,12 @@ const AddPackageDialog = ({ children }: MyComponentProps) => {
             <div className={`text-base font-light`}>
               Description
             </div>
-            <InputComp
+            {/* <InputComp
               className={`mt-4 w-full`}
+            /> */}
+            <TextAreaComp
+              className={`mt-4 w-full`}
+              rows={3}
             />
           </div>
           <div>

@@ -54,7 +54,9 @@ const TextEditor = forwardRef<QuillEditor, EditorProps>(
         // [{ 'script': 'sub'}, { 'script': 'super' }],      // superscript/subscript
         [{ 'indent': '-1'}, { 'indent': '+1' }],          // outdent/indent
         // [{ 'direction': 'rtl' }],                         // text direction
-      
+        // [{ 'color': [] }, { 'background': [] }],
+        [{ 'color': [] }],
+        ['link'],
       
         // ['clean']                                         // remove formatting button
       ];
