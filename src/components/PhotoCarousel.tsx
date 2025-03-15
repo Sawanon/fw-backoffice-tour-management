@@ -28,7 +28,7 @@ const PhotoCarousel = () => {
             <div className="rounded-[20px] overflow-hidden">
               <div>
                 <div className="flex aspect-video items-center justify-center overflow-hidden">
-                  <img src="public/images/image.jpeg" alt="" />
+                  <img src="/images/image.jpeg" alt="" />
                   {/* <span className="text-3xl font-semibold">{index + 1}</span> */}
                 </div>
               </div>

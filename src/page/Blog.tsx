@@ -48,7 +48,7 @@ const Blog = () => {
       <div className={`flex-1 relative overflow-y-auto pb-10`}>
         {/* cover */}
         <div className={`h-[305px] overflow-hidden relative`}>
-          <img src="/public/images/image.jpeg" className={`object-cover w-full`} />
+          <img src="/images/image.jpeg" className={`object-cover w-full`} />
         </div>
         {/* cover */}
         {/* desciption */}
