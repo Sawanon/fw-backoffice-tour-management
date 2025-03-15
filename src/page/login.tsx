@@ -1,3 +1,5 @@
+import { Link } from "react-router"
+
 const LoginPage = () => {
   return (
     <div className={`bg-white absolute inset-0`}>
@@ -27,9 +29,11 @@ const LoginPage = () => {
             />
           </div>
           <div className={`mt-7`}>
-            <div className={`h-12 w-full bg-[#0096CD] hover:bg-[#00B6F8] font-light text-base text-white flex justify-center items-center rounded-2xl select-none cursor-pointer`}>
-              Login
-            </div>
+            <Link to={`/`}>
+              <div className={`h-12 w-full bg-[#0096CD] hover:bg-[#00B6F8] font-light text-base text-white flex justify-center items-center rounded-2xl select-none cursor-pointer`}>
+                Login
+              </div>
+            </Link>
           </div>
         </div>
       </div>

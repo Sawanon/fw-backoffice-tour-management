@@ -5,14 +5,13 @@ import ScheduleCard from "./ScheduleCard";
 import TimePicker from "./TimePicker";
 import { InputComp } from "./InputComp";
 import SelectComp from "./SelectComp";
-import Autocomplete from "./Autocomplete";
 import ButtonComp from "./ButtonComp";
-import { Percent } from "lucide-react";
 import ScheduleInfomation from "./ScheduleInfomation";
 import PackageManagement from "./PackageManagement";
 import ColorPicker from 'react-pick-color'
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import InputTagComp from "./InputTagComp";
+import MonthPicker from "./MonthPicker";
 
 const ScheduleManagement = ({ onClickBack }: { onClickBack: () => void }) => {
   const [mode, setMode] = useState<"default" | "add" | "edit">("default");
@@ -334,7 +333,8 @@ const ScheduleManagement = ({ onClickBack }: { onClickBack: () => void }) => {
         {/* filter */}
         <div className={`mt-4 flex gap-4 items-center`}>
           <div className={`flex-1`}>
-            <DatePicker />
+            {/* <DatePicker /> */}
+            <MonthPicker />
           </div>
           <div onClick={handleOnClickAdd} className={`cursor-pointer`}>
             <AddCircle color="#000" size={24} />

@@ -1,7 +1,6 @@
 import { InputComp } from './InputComp'
 import TextAreaComp from './TextAreaComp'
 import SelectComp from './SelectComp'
-import Autocomplete from './Autocomplete'
 import InputTagComp from './InputTagComp'
 
 const AddTourForm = () => {

@@ -9,7 +9,7 @@ import {
 import ContentControl from "./ContentControl";
 import { Square, X } from "lucide-react";
 import TextEditor from "./TextEditor";
-import { Add, CloseCircle } from "iconsax-react";
+import { Add } from "iconsax-react";
 import ButtonComp from "./ButtonComp";
 
 const ContentFormDialog = ({

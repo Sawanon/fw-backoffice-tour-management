@@ -1,5 +1,6 @@
 import { ArrowDown2 } from 'iconsax-react'
 import { CheckCircle2, StarIcon, XCircle } from 'lucide-react'
+import { useState } from 'react'
 
 export type ReviewData = {
   username: string,
@@ -12,6 +13,7 @@ const ReviewCard = ({
 }:{
   reviewData: ReviewData,
 }) => {
+  const [isOpen, setIsOpen] = useState(false)
   return (
     <div className={`flex gap-4`}>
       {/* approve reject icon */}
@@ -51,7 +53,12 @@ const ReviewCard = ({
           </div>
           {/* createdAt */}
           {/* drop down something ? */}
-          <div className={`flex-1 flex justify-end`}>
+          <div
+            className={`flex-1 flex justify-end cursor-pointer`}
+            onClick={() => {
+              setIsOpen(prev => !prev)
+            }}
+          >
             <ArrowDown2 size={24} color='#000' />
           </div>
           {/* drop down something ? */}
@@ -61,7 +68,7 @@ const ReviewCard = ({
           {/* divider */}
         </div>
         {/* review text */}
-        <div className={`relative`}>
+        <div className={`relative min-h-[100px] ${isOpen ? `` : `h-[100px]`} overflow-hidden`}>
           <div>
             {reviewData.textReview}
           </div>
@@ -74,9 +81,11 @@ const ReviewCard = ({
               }
             </div>
           }
-          {/* <div className={`absolute inset-0 bg-gradient-to-b from-transparent from-40% to-white`}> */}
-            {/* fade */}
-          {/* </div> */}
+          {!isOpen &&
+            <div className={`absolute inset-0 bg-gradient-to-b from-transparent from-40% to-white`}>
+              {/* fade */}
+            </div>
+          }
         </div>
         {/* review text */}
       </div>

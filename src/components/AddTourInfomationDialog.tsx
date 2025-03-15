@@ -6,7 +6,6 @@ import {
   DialogHeader,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import Autocomplete from './Autocomplete';
 import { InputComp } from './InputComp';
 import ButtonComp from './ButtonComp';
 
